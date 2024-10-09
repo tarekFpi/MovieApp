@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:padding="@dimen/_8sdp"
+    android:gravity="center"
+    android:layout_height="wrap_content">
+
+  <androidx.cardview.widget.CardView
+      app:cardElevation="@dimen/_1sdp"
+      android:elevation="0dp"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content">
+
+      <ImageView
+          android:layout_width="@dimen/_40sdp"
+          android:layout_height="@dimen/_40sdp"
+          android:id="@+id/imageviewBill"
+          android:src="@drawable/s1"/>
+
+  </androidx.cardview.widget.CardView>
+
+    <TextView
+        android:layout_marginTop="@dimen/_8sdp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Bill Payments"
+        android:id="@+id/textBillName"
+        android:textSize="@dimen/_12sdp"
+        android:textColor="@color/black"
+        android:textFontWeight="300"
+        android:fontFamily="@font/regular"/>
+
+</LinearLayout>
