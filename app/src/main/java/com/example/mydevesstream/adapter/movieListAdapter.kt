@@ -22,14 +22,11 @@ class MovieListAdapter(private val context: Context,
       init {
           itemView.setOnClickListener(this)
       }
-
       override fun onClick(v: View?) {
           val position: Int = adapterPosition
           clickLisiner?.OnClickLisiner(position)
       }
-
   }
-
     interface onItemClickLisiner {
         fun OnClickLisiner(position: Int)
     }
