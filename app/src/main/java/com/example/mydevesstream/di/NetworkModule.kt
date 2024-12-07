@@ -8,15 +8,17 @@ import dagger.Module
 import dagger.Provides
 import dagger.hilt.InstallIn
 import dagger.hilt.components.SingletonComponent
+import okhttp3.OkHttpClient
 import retrofit2.Retrofit
 import retrofit2.converter.gson.GsonConverterFactory
 import javax.inject.Singleton
 
-/*@InstallIn(SingletonComponent::class)
+@InstallIn(SingletonComponent::class)
 @Module
-class DatabaseModule {
+class NetworkModule {
 
-    @Singleton
+
+   @Singleton
     @Provides
     fun providerRetrofitBuilder(
     ) : Retrofit.Builder {
@@ -24,18 +26,17 @@ class DatabaseModule {
             .addConverterFactory(GsonConverterFactory.create())
     }
 
+
     @Singleton
     @Provides
-    fun providesApiService(retrofit: Retrofit.Builder): ApiService {
+    fun providerApiService(retrofit: Retrofit.Builder): ApiService {
         return retrofit.build().create(ApiService::class.java)
     }
 
     @Singleton
     @Provides
-    fun provideContext(application: Application): Context = application.applicationContext
+    fun providerContext(application: Application): Context = application.applicationContext
 
-
-
-}*/
+}
 
 

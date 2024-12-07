@@ -1,5 +1,11 @@
 <resources>
-    <string name="app_name">MyDevesStream</string>
+    <string name="app_name">Movie Apps</string>
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
+
+
+    <style name="RoundedCorners" parent="">
+        <item name="cornerFamily">rounded</item>
+        <item name="cornerSize">16dp</item> <!-- Adjust radius as needed -->
+    </style>
 </resources>

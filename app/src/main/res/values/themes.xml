@@ -2,8 +2,9 @@
     <!-- Base application theme. -->
     <style name="AppTheme" parent="Theme.MaterialComponents.Light.NoActionBar">
 
-        <item name="colorPrimary">@color/White</item>
-        <item name="colorPrimaryVariant">@color/White</item>
+
+        <item name="colorPrimary">@color/themeColors</item>
+        <item name="colorPrimaryVariant">@color/themeColors</item>
         <item name="colorOnPrimary">@color/black</item>
         <!-- Secondary brand color. -->
         <item name="colorSecondary">@color/teal_200</item>
